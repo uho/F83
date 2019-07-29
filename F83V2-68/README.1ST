@@ -1,0 +1,49 @@
+This disk contains F83.68K, a public domain implementation of FORTH-83 that
+is ready to run. It also contains source files in squeezed format.  I have 
+squeezed them using the public domain utility SQ and you can unsqueeze them 
+with the USQ utility. Squeezed files have a Q in the file type.
+
+The original Laxen-Perry distribution had these files squeezed with a program
+that took hours (!) to run to unsqueeze. USQ will run in minutes and the 
+squeezed files take up less space than the original distribution disk. Make B: 
+(or C:) your default drive. Have plenty of room on your default drive and then 
+type A:USQ20 A:filename.BQK to make filename.BLK on your default drive. 
+
+Since I don't have a CP/M68K system to use, I have squeezed the files using a 
+CP/M80 system.  SQ17.COM, USQ20.COM and CRCK.COM are CP/M-80 programs to 
+squeeze, unsqueeze and perform hash checksums on the other files on this disk.
+Type CRCK *.* and see if what you have agrees with the values listed below. 
+This should assure you that you have a good copy of the disk. 
+
+
+The VIEW word expects certain source blocks to be on drive A: and certain
+source files to be on drive B:.  If you have a hard disk system, you can 
+follow the directions in README.PC to recompile your system with all of the 
+source blocks on your hard disk and the VIEW file numbers will be set up 
+correctly. 
+
+  Here are the files on the disk:
+CTL-S pauses, CTL-C aborts
+                                                                            
+--> FILE:  F83     .68K         CRC = 1B F1  68K FORTH system compiled.
+--> FILE:  README  .1ST         CRC =        This file
+--> FILE:  USQ20   .COM         CRC = 5F 25  CPM80 unsqueeze program
+--> FILE:  SQ17    .COM         CRC = 25 09  CPM80 squeeze program
+--> FILE:  README  .6Q          CRC = 0C 33  Original F83 instructions
+--> FILE:  F83-FIXS.TQT         CRC = 52 E2  Changes from F83 v.1.0
+--> FILE:  CRCK    .COM         CRC = 2D 47  CPM80 hash check program 
+                         These "blocks" are the F83 sources squeezed
+--> FILE:  KERNEL68.BQK         CRC = B3 86  Kernel source
+--> FILE:  META68  .BQK         CRC = 66 D0  Metacompiler source
+--> FILE:  CPU68000.BQK         CRC = 38 C6  68000 dependent code   
+--> FILE:  EXTEND68.BQK         CRC = 89 D4  Extensions source
+--> FILE:  UTILITY .BQK         CRC = 6E E6  The UTILITY source 
+                         These blocks are applications
+--> FILE:  HUFFMAN .BQK         CRC = 25 1A  A VERY slow compression program
+--> FILE:  CLOCK   .BQK         CRC = 0B C0  Source for a calendar example
+--> FILE:  EXPAND68.BQK         CRC = 9D 92  Original source to expand .HUF
+--> FILE:  BASIC   .BQK         CRC = 1B 94  BASIC compiler in FORTH
+
+
+Ted Shapin. July 31, 1984.                                      
+
