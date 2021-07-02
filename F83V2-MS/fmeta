@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -e "ok bye\r" | docker run -i --rm -v $(pwd):/home/dosemu -v $(pwd)/cdrom:/media/cdrom uhoffmann/dosemu -dumb f83.com meta86.blk 2>/dev/null
