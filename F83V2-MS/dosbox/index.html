@@ -1,0 +1,32 @@
+
+
+
+<html>
+<head>
+  <title>volksForth-83</title>
+  <script src="js-dos.js"></script>
+</head>
+<body>
+  <style>
+	 html, body { 
+      border: 0; 
+      margin: 0; 
+      background-color: #333; 
+   } 
+   canvas { 
+      margin: 10px; 
+      aspect-ratio: 1.333; 
+      height: calc( 100vh - 20px ); 
+   }
+  </style>
+  <canvas id="jsdos" width="800" height="600"></canvas>
+  <script>
+    Dos(document.getElementById("jsdos"), {
+    }).ready((fs, main) => {
+      fs.extract("F83V2-MS.zip","F83").then(() => {
+        main(["-c", "cd F83", "-c", "cls", "-c", "F83.COM"])
+      });
+    });
+  </script>
+</body>
+</html>
