@@ -7,7 +7,7 @@ FORTH-83 version 2.0 by Henry Laxen and Mike Perry for
 
 - CP/M-80 in directory `F83V2-80`
 - CP/M 68000 in directory `F83V2-68`
-- MSDOS: in directory `F83V2-MS`
+- MSDOS: in directory `F83V2-MS`(run it in [a modern Browser](https://uho.github.io/F83/))
 
 **F83** is a model implementation of the (now outdated) **Forth-83** standard. For your convenience you can find a copy of the Forth-83 standard document in the `Standard` directory.
 
